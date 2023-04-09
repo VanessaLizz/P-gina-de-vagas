@@ -6,10 +6,12 @@
     --vermelho-principal: #8E2424;
     --azul-escuro: #101828;
     --branco-fundo: #8E24240D;
+    --borda: rgb(214, 209, 209);
 }
 
 body {
     font-family: var(--fonte-principal);
+    width: 100vw;
 }
 /*cabeçalho*/
 header {
@@ -110,7 +112,7 @@ header {
     line-height: 24px;
 }
 
-/* vagas */
+/* banner vagas */
 .vagas-container {
     display: flex;
     flex-direction: column;
@@ -140,4 +142,46 @@ header {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 2.5em;
+}
+
+/* anúncio de vagas */
+.anuncio__vagas {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3rem;
+    margin: 0 20vw;
+}
+
+.vagas__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    color: var(--azul-escuro);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.vaga__titulo {
+    font-size: 20px;
+}
+
+.desenvolvedor {
+    padding: 1.5em;
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    width: 50vw;
+}
+
+.vaga__nome {
+    margin-bottom: 1em;
+}
+
+.vaga__descriçao {
+    font-size: 16px;
+    color: var(--cinza-claro);
+}
+
+.descriçao__valor {
+    margin-left: 1em;
 }
