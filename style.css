@@ -7,6 +7,8 @@
     --azul-escuro: #101828;
     --branco-fundo: #8E24240D;
     --borda: rgb(214, 209, 209);
+    --bege-fundo: #fffaf1;
+    --preto: #000000;
 }
 
 body {
@@ -184,4 +186,45 @@ header {
 
 .descriçao__valor {
     margin-left: 1em;
+}
+
+/* depoimentos */
+.depoimento-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10em 10em;
+    padding: 4em;
+    border: 1px solid var(--preto);
+    border-radius: 16px;
+    background: var(--bege-fundo);
+}
+
+.depoimentos__titulo {
+    color: var(--vermelho-principal);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.depoimentos__texto {
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--azul-escuro);
+    line-height: 44px;
+    text-align: center;
+    margin: 0.5em 2em;
+}
+
+.depoimentos__nome {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--azul-escuro);
+    margin: 0.75em 0;
+}
+
+.depoimentos__descriçao {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--cinza-claro);
 }
